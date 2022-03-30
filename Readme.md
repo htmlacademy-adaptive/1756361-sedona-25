@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
-* Студент: [Alina Levintas](https://up.htmlacademy.ru/adaptive/25/user/1756361).
-* Наставник: `Неизвестно`.
+* Студент: [Alina Levintas](https://up.htmlacademy.ru/adaptive/25/user/1756361);
+* Наставник: [Alexander Oksanich] (https://htmlacademy.ru/profile/oksanych).
 
 ---
 
