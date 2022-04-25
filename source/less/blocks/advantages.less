@@ -1,13 +1,76 @@
 .advantages__item--font-white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: @white;
+}
+
+.advantages__item {
+  width: 282px;
+  height: 210px;
+  padding-left: 20px;
+}
+
+.advantages__item-staff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 145px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 330px;
+  }
+}
+
+.advantages__item-img {
+  width: 40px;
+  padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    padding-top: 60px;
+    padding-right: 0;
+  }
+}
+
+.advantages__item-name {
+  font-weight: 700;
+  font-size: 18px;
+  width: 200px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+   text-align: center;
+  }
+}
+
+.advantages__item-text {
+  align-items: start;
+  padding-left: 53px;
+  text-align: initial;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 180px;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 60px;
+   }
 }
 
 .advantages__item-wrapper--first-line {
   background-color: @blue;
+  height: 470px;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    height: 265px;
   }
 }
 
@@ -22,10 +85,12 @@
 
 .advantages__item-wrapper--third-line {
   background-color: @blue;
+  height: 470px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
+    height: 265px;
   }
 }
 
@@ -35,15 +100,41 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    height: 265px;
   }
 }
 
 .advantages__item-intro {
   font-weight: 700;
   font-size: 18px;
+  padding-bottom: 11px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    width: 150px;
+  }
+}
+
+.advantages__item-number {
+  font-weight: 700;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+  }
 }
 
 .advantages__item-info {
+  margin: 0;
+  width: 280px;
   font-weight: 400;
   font-size: 14px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    font-size: 16px;
+    width: 200px;
+  }
 }

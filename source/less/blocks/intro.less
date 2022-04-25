@@ -3,6 +3,11 @@
   font-size: 18px;
   padding-bottom: 20px;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 40px;
+  }
 }
 
 .intro__info {
@@ -11,11 +16,19 @@
   padding-bottom: 20px;
 }
 
+.intro-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .intro {
-  width: 320px;
-  height: 226px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 483px;
   }
 }
