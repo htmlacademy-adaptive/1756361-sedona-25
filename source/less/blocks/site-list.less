@@ -1,6 +1,20 @@
 .site-list {
   display: flex;
+  position: relative;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    width: 100%;
+  }
 }
 
 .site-list__item {
@@ -9,7 +23,17 @@
   width: 320px;
   height: 55px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   color: @white;
   background-color: @blue;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    background-color: @white;
+    width: 15%;
+  }
+}
+
+.site-list__item-logo {
+  width: 20%;
 }
