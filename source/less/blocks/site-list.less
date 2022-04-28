@@ -1,13 +1,13 @@
 .site-list {
-  display: flex;
-  position: relative;
-  flex-direction: column;
+  display: none;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 0 auto;
     max-width: 768px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
   }
 

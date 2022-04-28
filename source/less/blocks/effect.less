@@ -1,0 +1,44 @@
+.effect {
+  width: 320px;
+  margin: 0 auto;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 162px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.effect__intro {
+  font-weight: 700;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.effect__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 575px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.effect__checkbox {
+  @media (min-width: @tablet-width) {
+    width: 255px;
+  }
+}
