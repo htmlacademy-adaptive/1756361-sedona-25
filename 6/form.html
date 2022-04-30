@@ -9,36 +9,34 @@
 </head>
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo--mobile">
-      <img src="img/logo.png" alt="Logo">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
-        <div class="main-nav__burger">
+      <div class="main-nav__burger">
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button">
           <span class="main-nav__burger-line"></span>
           <span class="main-nav__burger-line"></span>
           <span class="main-nav__burger-line"></span>
-        </div>
-      </button>
+        </button>
+      </div>
       <h1 class="main-nav__intro visually-hidden">Welcome to the gorgeous SEDONA Because the Grand Canyon sucks</h1>
       <div class="main-nav__wrapper">
-        <div class="main-nav__list site-list">
-          <a class="site-list__item" href="index.html">
-            Главная
-          </a>
-          <a  class="site-list__item" href="catalog.html">
-            Фото и видео
-          </a>
-          <a class="site-list__item" href="index.html" class="page-header__logo">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__list site-list">
+            <a class="site-list__item">
+              Главная
+            </a>
+            <a  class="site-list__item" href="catalog.html">
+              Фото и видео
+            </a>
+            <a class="site-list__item" href="form.html">
+              Форма Отзыва
+            </a>
+            <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </div>
+          <a class="site-list__item site-list__item--logo" href="index.html">
             <img src="img/logo.png" alt="Logo">
           </a>
-          <a class="site-list__item">
-            Форма Отзыва
-          </a>
-          <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-          </a>
-      </div>
       <div class="page-header__wrapper">
         <img src="#" alt="SEDONA">
       </div>
@@ -50,8 +48,8 @@
       <h2 class="intro__head">Оставьте свой отзыв</h2>
       <p class="intro__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
-    <form class="page-form__form form" action="#" method="post">
-      <div class="form__tablet-wrapper">
+    <form class="form" action="#" method="post">
+      <div class="form__flex">
         <fieldset class="form__item full-name">
         <div class="full-name__intro">
           <p>Представтесь:</p>
@@ -201,7 +199,7 @@
   </footer>
 
   <!-- сообщение об ошибке -->
-  <template id="success visually-hidden">
+  <template class="visually-hidden" id="success">
     <div class="success-message">
       <h2 class="success-message__intro">Ваш отзыв отправлен!</h2>
       <p class="success-message__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
@@ -210,7 +208,7 @@
   </template>
 
   <!-- успешная отправка формы -->
-  <template id="error visually-hidden">
+  <template class="visually-hidden" id="error">
     <div class="error-message">
       <h2 class="error-message__intro">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
       <p class="error-message__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>

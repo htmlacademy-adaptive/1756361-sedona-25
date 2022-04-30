@@ -61,7 +61,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   width: 282px;
-  height: 210px;
   padding-left: 20px;
 }
 .advantages__item-staff {
@@ -115,14 +114,14 @@ h6 {
     padding-bottom: 60px;
   }
 }
-.advantages__item-wrapper--first-line {
+.advantages__item--first-line {
   background-color: #81B3D2;
   height: 470px;
   width: 320px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .advantages__item-wrapper--first-line {
+  .advantages__item--first-line {
     width: 768px;
     display: flex;
     flex-direction: row;
@@ -130,37 +129,37 @@ h6 {
   }
 }
 @media (min-width: 1200px) {
-  .advantages__item-wrapper--first-line {
+  .advantages__item--first-line {
     justify-content: space-around;
     width: 1200px;
   }
 }
-.advantages__item-wrapper--second-line {
+.advantages__item--second-line {
   width: 320px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
-  .advantages__item-wrapper--second-line {
+  .advantages__item--second-line {
     display: flex;
     flex-direction: row;
     width: 768px;
   }
 }
 @media (min-width: 1200px) {
-  .advantages__item-wrapper--second-line {
+  .advantages__item--second-line {
     justify-content: space-around;
     width: 1200px;
   }
 }
-.advantages__item-wrapper--third-line {
+.advantages__item--third-line {
   width: 320px;
   margin: 0 auto;
   background-color: #81B3D2;
   height: 470px;
 }
 @media (min-width: 768px) {
-  .advantages__item-wrapper--third-line {
+  .advantages__item--third-line {
     display: flex;
     flex-direction: row-reverse;
     height: 265px;
@@ -168,18 +167,18 @@ h6 {
   }
 }
 @media (min-width: 1200px) {
-  .advantages__item-wrapper--third-line {
+  .advantages__item--third-line {
     justify-content: space-around;
     width: 1200px;
   }
 }
-.advantages__item-wrapper--forth-line {
+.advantages__item--forth-line {
   background-color: #EEEEEE;
   width: 320px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .advantages__item-wrapper--forth-line {
+  .advantages__item--forth-line {
     width: 768px;
     display: flex;
     flex-direction: row;
@@ -187,7 +186,7 @@ h6 {
   }
 }
 @media (min-width: 1200px) {
-  .advantages__item-wrapper--forth-line {
+  .advantages__item--forth-line {
     width: 1200px;
     justify-content: space-around;
   }
@@ -232,7 +231,7 @@ h6 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -248,45 +247,31 @@ h6 {
 .card__item {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 280px;
-}
-@media (min-width: 768px) {
-  .card__item {
-    flex-direction: row;
-    width: 648px;
-  }
-}
-@media (min-width: 1200px) {
-  .card__item {
-    width: 1200px;
-  }
-}
-.card__wrapper {
-  display: flex;
-  flex-direction: column;
   text-align: start;
 }
 @media (min-width: 768px) {
-  .card__wrapper {
+  .card__item {
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .card__wrapper {
-    width: calc(100%/3);
+  .card__item {
+    width: calc(100% / 3);
   }
 }
-.card__wrapper--panorama {
+.card__item--panorama {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
   width: 280px;
 }
 @media (min-width: 768px) {
-  .card__wrapper--panorama {
+  .card__item--panorama {
     width: 648px;
   }
 }
 @media (min-width: 1200px) {
-  .card__wrapper--panorama {
+  .card__item--panorama {
     width: 1200px;
   }
 }
@@ -412,11 +397,11 @@ h6 {
     width: 768px;
   }
 }
-.form__tablet-wrapper {
+.form__flex {
   display: block;
 }
 @media (min-width: 768px) {
-  .form__tablet-wrapper {
+  .form__flex {
     width: 673px;
     display: flex;
     flex-direction: row;
@@ -424,7 +409,7 @@ h6 {
   }
 }
 @media (min-width: 1200px) {
-  .form__tablet-wrapper {
+  .form__flex {
     width: 960px;
   }
 }
@@ -497,18 +482,19 @@ h6 {
 }
 .main-nav__toggle {
   display: flex;
+  position: absolute;
   padding: 0;
   border: none;
   color: inherit;
   background-color: transparent;
   width: 280px;
   margin: 0 auto;
-  justify-content: end;
+  justify-content: flex-end;
   padding-top: 20px;
 }
 @media (min-width: 768px) {
   .main-nav__toggle {
-    display: flex;
+    display: none;
   }
 }
 .main-nav__burger {
@@ -522,7 +508,7 @@ h6 {
 .main-nav__burger-line {
   width: 100%;
   height: 4px;
-  background-color: #81B3D2;
+  background-color: #FFFFFF;
 }
 .map {
   width: 320px;
@@ -622,30 +608,6 @@ h6 {
   font-size: 14px;
   padding-bottom: 20px;
 }
-.page-header__logo--mobile {
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-}
-@media (min-width: 768px) {
-  .page-header__logo--mobile {
-    display: none;
-  }
-}
-.page-header__logo {
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media (min-width: 768px) {
-  .page-header__logo {
-    position: absolute;
-    z-index: 2;
-  }
-}
 .page {
   min-width: 320px;
   margin: 0;
@@ -692,18 +654,21 @@ h6 {
 }
 .site-list {
   display: block;
-  margin: 0 auto;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+  left: 50%;
+  position: relative;
   width: 320px;
 }
 @media (min-width: 768px) {
   .site-list {
     display: flex;
-    position: relative;
     flex-direction: row;
-    margin: 0 auto;
     max-width: 768px;
     width: 100%;
     justify-content: space-evenly;
+    z-index: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -715,7 +680,6 @@ h6 {
 .site-list__item {
   display: block;
   position: relative;
-  width: 320px;
   height: 55px;
   font-weight: 700;
   font-size: 14px;
@@ -724,10 +688,26 @@ h6 {
 }
 @media (min-width: 768px) {
   .site-list__item {
+    width: 20%;
     color: #000000;
     background-color: #FFFFFF;
-    width: 15%;
   }
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
+  }
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+}
+.site-list__item--logo {
+  display: block;
+  position: absolute;
+  width: 182px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  background-color: transparent;
+  top: 0;
 }
 .social {
   display: grid;
