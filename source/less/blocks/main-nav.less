@@ -36,6 +36,7 @@
   margin: 0 auto;
   justify-content: space-between;
 
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -55,6 +56,10 @@
   height: 100%;
   margin: 0 auto;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle--closed span {
@@ -83,6 +88,15 @@
   width: 23px;
   height: 23px;
   z-index: 5;
+
+
+  &:hover span {
+    background-color: rgba(@blue, 0.6);
+  }
+
+  &:active span {
+    background-color: rgba(@blue, 0.3);
+  }
 }
 
 .main-nav__burger-line {

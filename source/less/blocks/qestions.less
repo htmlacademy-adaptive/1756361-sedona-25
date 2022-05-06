@@ -1,8 +1,7 @@
 .qestions {
   margin: 0 auto;
   width: 320px;
-  padding: 0 20px;
-  padding-top: 39px;
+  padding: 39px 20px 0;
 
   @media (min-width: @tablet-width) {
     width: 458px;
@@ -40,7 +39,21 @@
   color: @white;
   font-weight: 700;
   font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-down;
+    color: rgba(@white, 0.3);
+  }
+
+  &:disabled {
+    background-color: @grey-disable;
+  }
 
   @media (min-width: @tablet-width) {
     width: 458px;
