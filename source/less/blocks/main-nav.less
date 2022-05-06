@@ -1,31 +1,106 @@
-.main-nav__toggle {
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  height: 58px;
+}
+
+.main-nav__wrapper {
+  display: block;
+  position: absolute;
+  width: 320px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.main-nav__toggle--opened {
   display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
   position: absolute;
   padding: 0;
   border: none;
   color: inherit;
   background-color: transparent;
-  width: 280px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  justify-content: flex-end;
-  padding-top: 20px;
+  justify-content: space-between;
+
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
+.main-nav__toggle--closed {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--closed span {
+  &:nth-child(1) {
+    background-color: @white;
+    width: 27px;
+    transform: rotate(45deg) translateY(325%);
+  }
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  &:nth-child(3) {
+    background-color: @white;
+    width: 27px;
+    transform: rotate(-45deg) translateY(-345%);
+  }
+}
+
 .main-nav__burger {
+  display: block;
+  position: relative;
+  transform: translateX(-100%) translateY(17px);
+  margin-left: calc(100% - 20px);
   width: 23px;
   height: 23px;
-  display: flex;
-  align-content: flex-end;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 5;
+
+
+  &:hover span {
+    background-color: rgba(@blue, 0.6);
+  }
+
+  &:active span {
+    background-color: rgba(@blue, 0.3);
+  }
 }
 
 .main-nav__burger-line {
   width: 100%;
   height: 4px;
-  background-color: @white;
+  background-color: @blue;
 }
