@@ -1,0 +1,27 @@
+.checkbox {
+  position: relative;
+}
+
+.checkbox__input {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: -13px;
+  width: 46px;
+  height: 46px;
+  background-color: @grey-form-catalog;
+  border-radius: 50%;
+}
+
+.checkbox__label {
+  padding-left: 62px;
+}
+
+.checkbox__input:checked + .checkbox__icon {
+  background-image: url("/img/pin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

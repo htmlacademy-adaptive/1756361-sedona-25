@@ -20,13 +20,13 @@
       <div class="main-nav__wrapper">
         <div class="main-nav__wrapper">
           <div class="main-nav__list site-list">
-            <a class="site-list__item">
+            <a class="site-list__item" href="index.html">
               Главная
             </a>
             <a  class="site-list__item" href="catalog.html">
               Фото и видео
             </a>
-            <a class="site-list__item" href="form.html">
+            <a class="site-list__item site-list__item--active">
               Форма Отзыва
             </a>
             <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">
@@ -36,13 +36,14 @@
           <a class="site-list__item site-list__item--logo" href="index.html">
             <img src="img/logo.png" alt="Logo">
           </a>
-      <div class="page-header__wrapper">
-        <img src="#" alt="SEDONA">
+        </div>
       </div>
     </nav>
-  </div>
   </header>
   <main class="page-form">
+    <div class="page-header__wrapper">
+      <img src="#" alt="SEDONA">
+    </div>
     <section class="intro">
       <h2 class="intro__head">Оставьте свой отзыв</h2>
       <p class="intro__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -74,8 +75,7 @@
           <label class="user-data__label" for="number">Контактный телефон*:</label>
           <div class="user-data__wrapper">
             <input class="user-data__input" id="number" type="tel" name="number" placeholder="Введите телефон">
-            <div class="user-data__input-icon">
-              <img src="#" alt="Иконка телефона">
+            <div class="user-data__input-icon user-data__input-icon--tel">
             </div>
           </div>
         </div>
@@ -83,8 +83,7 @@
           <label class="user-data__label" for="mail">Электронная почта*:</label>
           <div class="user-data__wrapper">
             <input class="user-data__input" id="mail" type="email" name="mail" placeholder="Введите e-mail">
-            <div class="user-data__input-icon">
-              <img src="#" alt="Иконка почты">
+            <div class="user-data__input-icon user-data__input-icon--mail">
             </div>
           </div>
         </div>
@@ -92,7 +91,9 @@
       </div>
     <fieldset class="form__item effect">
       <div class="effect__intro">
+        <span class="effect__intro-line"></span>
         <p>Ваше общее впечатление:</p>
+        <span class="effect__intro-line"></span>
       </div>
       <div class="effect__wrapper">
         <p class="effect__checkbox checkbox">
@@ -114,7 +115,9 @@
     </fieldset>
     <fieldset class="form__item visited">
       <div class="visited__intro">
-        <p>Посещенные достопримечательности:</p>
+        <span class="visited__intro-line"></span>
+        <p>Посещенные<br>достопримечательности:</p>
+        <span class="visited__intro-line"></span>
       </div>
       <div class="visited__wrapper">
         <p class="visited__checkbox check-visit">
@@ -140,7 +143,11 @@
       </div>
     </fieldset>
     <fieldset class="form__item comment">
-      <legend class="comment__legend">Опишите свои эмоции:</legend>
+      <legend class="comment__legend">
+        <span class="comment__legend-line"></span>
+        <span>Опишите свои эмоции:</span>
+        <span class="comment__legend-line"></span>
+      </legend>
         <textarea id="textarea" name="textarea" rows="10">Опишите подробно все свои восторги </textarea>
     </fieldset>
       <div class="form__button-wrapper">
@@ -214,5 +221,7 @@
       <button class="error-message__button">ОК</button>
     </div>
   </template>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

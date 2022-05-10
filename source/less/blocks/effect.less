@@ -1,15 +1,15 @@
 .effect {
   width: 320px;
   margin: 0 auto;
-  border: none;
 
   @media (min-width: @tablet-width) {
     width: 648px;
-    height: 162px;
+    height: 230px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    height: 150px;
   }
 }
 
@@ -18,11 +18,41 @@
   font-size: 18px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     font-size: 21px;
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+.effect__intro-line {
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: @grey-before;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
   }
 }
 
 .effect__wrapper {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -30,10 +60,12 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 575px;
+    height: 150px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    height: 100px;
   }
 }
 

@@ -9,8 +9,9 @@
 
 .full-name {
   width: 320px;
+  height: 400px;
   margin: 0 auto;
-  border: none;
+
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -21,9 +22,38 @@
   }
 }
 
+.full-name__label {
+  padding-left: 12px;
+}
+
 .full-name__wrapper {
   width: 280px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.full-name__input {
+  width: calc(100% - 13px);
+  height: 48px;
+  padding-left: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: @grey-form-catalog;
+  border: 4px solid transparent;
+
+  &::placeholder {
+    color: @black;
+  }
+
+  &:hover {
+    background-color: @grey-disable;
+  }
+
+  &:active {
+    background: @white;
+    border: 4px solid @grey-disable;
+  }
 }
