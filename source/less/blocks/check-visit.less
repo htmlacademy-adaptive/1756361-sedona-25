@@ -10,6 +10,7 @@
 .check-visit__icon {
   position: absolute;
   top: -13px;
+  left: 0;
   width: 46px;
   height: 46px;
   background-color: @grey-form-catalog;
@@ -21,15 +22,20 @@
 }
 
 .check-visit__input:checked + .check-visit__icon {
-  background-image: url("/img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-// .check-visit__input:focus + .check-visit__icon {
-//   background-image: url("/img/check-off-focus.svg");
-// }
+.check-visit__input:hover + .check-visit__icon,
+.check-visit__input:checked:hover + .check-visit__icon {
+  background-color: @grey-disable;
+}
 
-// .check-visit__input:checked:focus + .check-visit__icon {
-//   background-image: url("/img/check-focus.svg");
-// }
+.check-visit__input:active + .check-visit__icon,
+.check-visit__input:checked:active + .check-visit__icon {
+  background-image: url("../img/tick-active.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @grey-active;
+}

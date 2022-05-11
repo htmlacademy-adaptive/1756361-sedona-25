@@ -7,38 +7,6 @@
   }
 }
 
-.visited__intro {
-  font-weight: 700;
-  font-size: 18px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
-    position: relative;
-    width: 768px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 960px;
-  }
-}
-
-.visited__intro-line {
-  @media (min-width: @tablet-width) {
-    display: block;
-    background-color: @grey-before;
-    width: 123px;
-    height: 1px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 280px;
-  }
-}
-
 .visited__wrapper {
   height: 232px;
   display: flex;
@@ -46,6 +14,8 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: @tablet-width) {
     width: 452px;
