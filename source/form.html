@@ -20,13 +20,13 @@
       <div class="main-nav__wrapper">
         <div class="main-nav__wrapper">
           <div class="main-nav__list site-list">
-            <a class="site-list__item">
+            <a class="site-list__item" href="index.html">
               Главная
             </a>
             <a  class="site-list__item" href="catalog.html">
               Фото и видео
             </a>
-            <a class="site-list__item" href="form.html">
+            <a class="site-list__item site-list__item--active">
               Форма Отзыва
             </a>
             <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">
@@ -36,13 +36,14 @@
           <a class="site-list__item site-list__item--logo" href="index.html">
             <img src="img/logo.png" alt="Logo">
           </a>
-      <div class="page-header__wrapper">
-        <img src="#" alt="SEDONA">
+        </div>
       </div>
     </nav>
-  </div>
   </header>
   <main class="page-form">
+    <div class="page-header__wrapper">
+      <img src="#" alt="SEDONA">
+    </div>
     <section class="intro">
       <h2 class="intro__head">Оставьте свой отзыв</h2>
       <p class="intro__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -51,31 +52,30 @@
       <div class="form__flex">
         <fieldset class="form__item full-name">
         <div class="full-name__intro">
-          <p>Представтесь:</p>
+          <p class="title">Представтесь:</p>
         </div>
         <p class="full-name__wrapper">
           <label class="full-name__label" for="name">Имя*:</label>
-          <input class="full-name__input" id="name" type="text" placeholder="Пётр" required>
+          <input class="full-name__input" id="name" type="text" placeholder="Введите имя" required>
         </p>
         <p class="full-name__wrapper">
           <label class="full-name__label" for="surname">Фамилия*:</label>
-          <input class="full-name__input" id="surname" type="text" placeholder="Пустота" required>
+          <input class="full-name__input" id="surname" type="text" placeholder="Введите фамилию" required>
         </p>
         <p class="full-name__wrapper">
           <label class="full-name__label" for="patronymic">Отчество:</label>
-          <input class="full-name__input" id="patronymic" type="text" placeholder="Викторович">
+          <input class="full-name__input" id="patronymic" type="text" placeholder="Введите отчество">
         </p>
         </fieldset>
         <fieldset class="form__item user-data">
         <div class="user-data__intro">
-          <p>Контактная информация:</p>
+          <p class="title">Контактная информация:</p>
         </div>
         <div class="user-data__inform">
           <label class="user-data__label" for="number">Контактный телефон*:</label>
           <div class="user-data__wrapper">
             <input class="user-data__input" id="number" type="tel" name="number" placeholder="Введите телефон">
-            <div class="user-data__input-icon">
-              <img src="#" alt="Иконка телефона">
+            <div class="user-data__input-icon user-data__input-icon--tel">
             </div>
           </div>
         </div>
@@ -83,69 +83,90 @@
           <label class="user-data__label" for="mail">Электронная почта*:</label>
           <div class="user-data__wrapper">
             <input class="user-data__input" id="mail" type="email" name="mail" placeholder="Введите e-mail">
-            <div class="user-data__input-icon">
-              <img src="#" alt="Иконка почты">
+            <div class="user-data__input-icon user-data__input-icon--mail">
             </div>
           </div>
         </div>
         </fieldset>
       </div>
     <fieldset class="form__item effect">
-      <div class="effect__intro">
-        <p>Ваше общее впечатление:</p>
+      <div class="title--wrapper">
+        <span class="title--line"></span>
+        <p class="title">Ваше общее впечатление:</p>
+        <span class="title--line"></span>
       </div>
-      <div class="effect__wrapper">
-        <p class="effect__checkbox checkbox">
-          <input class="checkbox__input" type="radio" name="Positive" value="Скорее положительное" checked>
+      <ul class="effect__wrapper">
+        <li class="effect__checkbox checkbox">
+          <label class="checkbox__label" for="positive">
+          <input class="checkbox__input" type="radio" name="effect" id="positive" value="positive" checked>
           <span class="checkbox__icon"></span>
-          <label class="checkbox__label">Скорее положительное</label>
-        </p>
-        <p class="effect__checkbox checkbox">
-          <input class="checkbox__input" type="radio" name="Negative" value="Скорее отрицательное">
+          Скорее положительное
+          </label>
+        </li>
+        <li class="effect__checkbox checkbox">
+          <label class="checkbox__label" for="negative">
+          <input class="checkbox__input" type="radio" name="effect" id="negative" value="negative">
           <span class="checkbox__icon"></span>
-          <label class="checkbox__label">Скорее отрицательное</label>
-        </p>
-        <p class="effect__checkbox checkbox">
-          <input class="checkbox__input" type="radio" name="No answer" value="Затрудняюсь ответить">
+          Скорее отрицательное
+          </label>
+        </li>
+        <li class="effect__checkbox checkbox">
+          <label class="checkbox__label" for="no-answer">
+          <input class="checkbox__input" type="radio" name="effect" id="no-answer" value="no-answer">
           <span class="checkbox__icon"></span>
-          <label class="checkbox__label">Затрудняюсь ответить</label>
-        </p>
-      </div>
+          Затрудняюсь ответить
+          </label>
+        </li>
+      </ul>
     </fieldset>
     <fieldset class="form__item visited">
-      <div class="visited__intro">
-        <p>Посещенные достопримечательности:</p>
+      <div class="title--wrapper">
+        <span class="title--line"></span>
+        <p class="title">Посещенные<br>достопримечательности:</p>
+        <span class="title--line"></span>
       </div>
-      <div class="visited__wrapper">
-        <p class="visited__checkbox check-visit">
+      <ul class="visited__wrapper">
+        <li class="visited__checkbox check-visit">
+          <label class="check-visit__label">
           <input class="check-visit__input" type="checkbox" name="Brige" value="Мост Дьявола" checked>
           <span class="check-visit__icon"></span>
-          <label class="check-visit__label">Мост Дьявола</label>
-        </p>
-        <p class="visited__checkbox check-visit">
+          Мост Дьявола
+          </label>
+        </li>
+        <li class="visited__checkbox check-visit">
+          <label class="check-visit__label">
           <input class="check-visit__input" type="checkbox" name="mountain" value="Гора-Колокол" checked>
           <span class="check-visit__icon"></span>
-          <label class="check-visit__label">Гора-Колокол</label>
-        </p>
-        <p class="visited__checkbox check-visit">
+          Гора-Колокол
+          </label>
+        </li>
+        <li class="visited__checkbox check-visit">
+          <label class="check-visit__label">
           <input class="check-visit__input" type="checkbox" name="park" value="Слайд-парк" checked>
           <span class="check-visit__icon"></span>
-          <label class="check-visit__label">Слайд-парк</label>
-        </p>
-        <p class="visited__checkbox check-visit">
+          Слайд-парк
+          </label>
+        </li>
+        <li class="visited__checkbox check-visit">
+          <label class="check-visit__label">
           <input class="check-visit__input" type="checkbox" name="rock" value="Красные скалы">
           <span class="check-visit__icon"></span>
-          <label class="check-visit__label">Красные скалы</label>
-        </p>
-      </div>
+          Красные скалы
+          </label>
+        </li>
+      </ul>
     </fieldset>
     <fieldset class="form__item comment">
-      <legend class="comment__legend">Опишите свои эмоции:</legend>
-        <textarea id="textarea" name="textarea" rows="10">Опишите подробно все свои восторги </textarea>
+      <div class="title--wrapper">
+        <span class="title--line"></span>
+        <p class="title">Опишите свои эмоции:</p>
+        <span class="title--line"></span>
+      </div>
+        <textarea class="comment__placeholder" placeholder="Опишите подробно все свои восторги " id="textarea" name="textarea" rows="10"></textarea>
     </fieldset>
       <div class="form__button-wrapper">
-        <button class="form__button-submit" type="submit" value="Отправить форму">Отправить отзыв</button>
-        <p class="form__button-submit-footnote">* — Обязательные поля</p>
+        <button class="form__button button" type="submit" value="Отправить форму">Отправить отзыв</button>
+        <p class="form__button-footnote">* — Обязательные поля</p>
       </div>
     </form>
   </main>
@@ -214,5 +235,7 @@
       <button class="error-message__button">ОК</button>
     </div>
   </template>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

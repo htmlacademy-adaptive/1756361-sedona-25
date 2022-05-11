@@ -1,28 +1,24 @@
 .visited {
   width: 320px;
   margin: 0 auto;
-  border: none;
 
   @media (min-width: @tablet-width) {
     width: 648px;
   }
 }
 
-.visited__intro {
-  font-weight: 700;
-  font-size: 18px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
-    width: 300px;
-    margin: 0 auto;
-  }
-}
-
 .visited__wrapper {
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+
   @media (min-width: @tablet-width) {
     width: 452px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -31,12 +27,13 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    height: 100px;
   }
 }
 
 .visited__checkbox {
   @media (min-width: @tablet-width) {
     text-align: initial;
-    width: 151px;
+    width: 170px;
   }
 }
