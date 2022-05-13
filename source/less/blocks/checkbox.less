@@ -10,7 +10,7 @@
 .checkbox__icon {
   position: absolute;
   top: -13px;
-  left: 15px;
+  left: 0;
   width: 46px;
   height: 46px;
   background-color: @grey-form-catalog;
@@ -18,11 +18,14 @@
 }
 
 .checkbox__label {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
   padding-left: 62px;
 }
 
 .checkbox__input:checked + .checkbox__icon {
-  background-image: url("../img/pin.svg");
+  background-image: url("../img/icon/pin.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -34,7 +37,7 @@
 
 .checkbox__input:active + .checkbox__icon,
 .checkbox__input:checked:active + .checkbox__icon {
-  background-image: url("../img/pin-active.svg");
+  background-image: url("../img/icon/pin-active.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: @grey-active;

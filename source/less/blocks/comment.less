@@ -12,10 +12,6 @@
   }
 }
 
-.comment__placeholder {
-  padding-top: 20px;
-}
-
 .comment textarea {
   width: calc(100% - 71px);
   height: 150px;
@@ -28,6 +24,10 @@
   border: none;
   resize: none;
   color: @black;
+
+  &::placeholder {
+    color: rgba(@black, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 648px;
