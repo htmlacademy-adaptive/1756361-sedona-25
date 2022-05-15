@@ -21,7 +21,7 @@
   transition: all 1s ease;
   position: absolute;
   width: 320px;
-
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -30,7 +30,7 @@
     height: 58px;
     width: 100%;
     justify-content: space-evenly;
-    // z-index: 0;
+    z-index: 0;
     transition: none;
     transform: translateY(0%);
   }
@@ -43,6 +43,10 @@
 
 .site-list--menu {
   transform: translateY(-100%);
+
+  @media (min-width: @tablet-width) {
+    transform: translateY(0);
+  }
 }
 
 .site-list__item {
@@ -121,4 +125,5 @@
   transform: translateX(-50%);
   background-color: transparent;
   top: 0;
+  z-index: 0;
 }

@@ -7,11 +7,31 @@
   }
 }
 
+.title--wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
 .title--line {
   @media (min-width: @tablet-width) {
     display: block;
     background-color: @grey-before;
     width: 123px;
     height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
   }
 }

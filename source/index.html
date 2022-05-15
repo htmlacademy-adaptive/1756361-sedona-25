@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/Favicon/favicon-32.png">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -40,6 +42,7 @@
     </header>
     <main class="page__main">
       <div class="page__main-background">
+        <img class="page__main-background-image" src="img/text-index.svg" width="280" height="215" alt="Welcome to the gorgeous Sedona, because the Grand Canyon is sucks">
       </div>
       <section class="intro">
         <h2 class="intro__head">СЕДОНА — небольшой городок в Аризоне, заслуживающийвающий большего!</h2>
@@ -53,22 +56,26 @@
               <p class="advantages__item-info">Седона не аттракцион для туристов, там теяет мвоя жизнь</p>
             </div>
             <div class="advantages__item">
-              <img src="#" alt="Изображение кафе">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.png 1x, img/photo-city-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.png 1x, img/photo-city-tablet@2x.png 2x">
+                <img class="advantages__item-photo" src="img/photo-city.png" width="320" height="260" alt="Седона" srcset="img/photo-city@2x.png 2x">
+              </picture>
             </div>
           </div>
           <div class="advantages__item advantages__item--second-line">
             <div class="advantages__item advantages__item-staff">
-              <img class="advantages__item-img" src="img/icon-house.svg" alt="Логотип домика">
+              <img class="advantages__item-img" src="img/icon/icon-house.svg" alt="Логотип домика">
               <h2 class="advantages__item-name">Жилье</h2>
               <p class="advantages__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="advantages__item advantages__item-staff">
-              <img class="advantages__item-img" src="img/icon-burger.svg" alt="Логотип бургера">
+              <img class="advantages__item-img" src="img/icon/icon-burger.svg" alt="Логотип бургера">
               <h2 class="advantages__item-name">Еда</h2>
               <p class="advantages__item-text">Всегда заказывайте Фирменный Бургер, Вы не разочаруетесь!</p>
             </div>
             <div class="advantages__item advantages__item-staff">
-              <img class="advantages__item-img" src="img/icon-present.svg" alt="Логотип сувениров">
+              <img class="advantages__item-img" src="img/icon/icon-present.svg" alt="Логотип сувениров">
               <h2 class="advantages__item-name">Сувениры</h2>
               <p class="advantages__item-text">Не только китайского, но и местного производства!</p>
             </div>
@@ -80,7 +87,11 @@
               <p class="advantages__item-info">Да, по нему можно пройти! Если вы осмельтесь, конечно</p>
             </div>
             <div class="advantages__item">
-              <img src="#" alt="Изображение каньона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.png 1x, img/photo-bridge-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.png 1x, img/photo-bridge-tablet@2x.png 2x">
+                <img class="advantages__item-photo" src="img/photo-bridge.png" width="320" height="260" alt="Седона" srcset="img/photo-bridge@2x.png 2x">
+              </picture>
             </div>
           </div>
           <div class="advantages__item advantages__item--forth-line">
@@ -89,11 +100,19 @@
               <span class="advantages__item-number">— №3 —</span>
               <p class="advantages__item-info">Все интересные места находятся очень близко</p>
             </div>
+            <span class="advantages__item-line">
+              <svg width="284" height="1" viewBox="0 0 284 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="284" height="1" fill="#D6D6D6"/>
+              </svg></span>
             <div class="advantages__item">
               <h2 class="advantages__item-intro">Красивая дорога</h2>
               <span class="advantages__item-number">— №4 —</span>
               <p class="advantages__item-info">Ехать в Седону из лас-Вегаса совсем не скучно!</p>
             </div>
+            <span class="advantages__item-line">
+              <svg width="284" height="1" viewBox="0 0 284 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="284" height="1" fill="#D6D6D6"/>
+              </svg></span>
             <div class="advantages__item">
               <h2 class="advantages__item-intro">Мало туристов</h2>
               <span class="advantages__item-number">— №5 —</span>

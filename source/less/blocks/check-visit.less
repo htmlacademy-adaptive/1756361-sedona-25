@@ -18,11 +18,14 @@
 }
 
 .check-visit__label {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
   padding-left: 62px;
 }
 
 .check-visit__input:checked + .check-visit__icon {
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/icon/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -34,7 +37,7 @@
 
 .check-visit__input:active + .check-visit__icon,
 .check-visit__input:checked:active + .check-visit__icon {
-  background-image: url("../img/tick-active.svg");
+  background-image: url("../img/icon/tick-active.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: @grey-active;

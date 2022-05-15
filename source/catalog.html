@@ -38,9 +38,9 @@
       </div>
       </nav>
   </header>
-  <main class="page-catalog">
-    <div class="page-header__wrapper">
-      <img src="#" alt="SEDONA">
+  <main class="page__main">
+    <div class="page__main-background page__main-background--catalogform">
+      <img class="page__main-background-image page__main-background-image--catalogform" src="img/SEDONA.svg" width="280" height="215" alt="Welcome to the gorgeous Sedona, because the Grand Canyon is sucks">
     </div>
     <section class="intro">
       <h2 class="intro__head">Фото и видео</h2>
@@ -48,7 +48,11 @@
     </section>
     <div class="card">
       <div class="card__item card__item--panorama">
-        <img class="card__image" src="#" alt="панорама">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet@2x.png 2x">
+          <img class="card__image" src="img/photo-1-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-1-mobile@2x.png 2x">
+        </picture>
         <div class="card__description card__description--panorama">
           <div class="card__autor-wrapper">
             <h2 class="card__intro">неродные просторы</h2>
@@ -63,7 +67,11 @@
         </div>
       </div>
       <div class="card__item">
-        <img class="card__image" src="img/photo-2-mobile.png" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet@2x.png 2x">
+          <img class="card__image" src="img/photo-2-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-2-mobile@2x.png 2x">
+        </picture>
         <div class="card__description">
           <div class="card__autor-wrapper">
             <h2 class="card__intro">Местная растительность</h2>
@@ -78,7 +86,11 @@
         </div>
       </div>
       <div class="card__item">
-        <img class="card__image" src="img/photo-3-mobile.png" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet@2x.png 2x">
+          <img class="card__image" src="img/photo-3-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-3-mobile@2x.png 2x">
+        </picture>
         <div class="card__description">
           <div class="card__autor-wrapper">
             <h2 class="card__intro">Дорога на север</h2>
@@ -93,7 +105,11 @@
         </div>
       </div>
       <div class="card__item">
-        <img class="card__image" src="img/photo-4-mobile.png" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.png 1x, img/photo-4-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-4-tablet.png 1x, img/photo-4-tablet@2x.png 2x">
+          <img class="card__image" src="img/photo-4-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-4-mobile@2x.png 2x">
+        </picture>
         <div class="card__description">
           <div class="card__autor-wrapper">
             <h2 class="card__intro">Мост дьявола</h2>
@@ -115,7 +131,11 @@
     <section class="video">
       <h2 class="visually-hidden">Видео презентация</h2>
       <div class="video__item">
-        <img src="#" alt="видео">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+          <img class="card__image" src="img/video-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/video-mobile@2x.png 2x">
+        </picture>
       </div>
     </section>
   </main>
