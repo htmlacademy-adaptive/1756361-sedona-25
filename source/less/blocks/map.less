@@ -17,15 +17,35 @@
 .map__wrapper {
   display: flex;
   margin: auto;
+  position: relative;
   color: @black;
   background-color: @white;
   background-position: 0 0;
   background-repeat: repeat;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("../img/icon/pin.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .map__wrapper iframe {
   border: none;
   display: block;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("../img/icon/pin.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     width: 768px;

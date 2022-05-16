@@ -37,14 +37,20 @@
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 518px;
+    background-image: url("../img/triangle.svg"), url("../img/back-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/triangle.svg"), url("../img/back-desktop@2x.png");
+      background-image: url("../img/triangle.svg"), url("../img/back-tablet@2x.png");
     }
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    background-image: url("../img/triangle.svg"), url("../img/back-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle.svg"), url("../img/back-desktop@2x.png");
+    }
   }
 }
 
