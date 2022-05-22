@@ -107,6 +107,18 @@ const copy = (done) => {
   done();
 };
 
+const copyFavicons = () => {
+  return gulp.src('source/img/favicons/*.{png,jpg}')
+    .pipe(squoosh({}))
+    .pipe(gulp.dest('build/img/favicons'));
+};
+
+const copySvgFavicons = () => {
+  return gulp.src('source/img/favicons/*.svg')
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img/favicons'));
+};
+
 // Server
 
 const server = (done) => {
@@ -148,7 +160,9 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
-    createWebp
+    createWebp,
+    copyFavicons,
+    copySvgFavicons
   )
 );
 
@@ -164,7 +178,9 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
-    createWebp
+    createWebp,
+    copyFavicons,
+    copySvgFavicons
   ),
   gulp.series(
     server,

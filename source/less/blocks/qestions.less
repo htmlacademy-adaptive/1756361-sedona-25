@@ -32,10 +32,21 @@
 }
 
 .qestions__button {
-  width: 285px;
-  height: 58px;
+  display: block;
+  padding: 16px 0 16px 0;
+  margin-top: 0;
+  width: 269px;
+  height: 28px;
 
   @media (min-width: @tablet-width) {
     width: 458px;
+  }
+}
+
+.qestions__button a {
+  color: @white;
+
+  &:active {
+    color: rgba(@white, 0.3);
   }
 }
