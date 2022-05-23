@@ -108,15 +108,15 @@ const copy = (done) => {
 };
 
 const copyFavicons = () => {
-  return gulp.src('source/img/favicons/*.{png,jpg}')
+  return gulp.src('source/img/favicon/*.{png,jpg}')
     .pipe(squoosh({}))
-    .pipe(gulp.dest('build/img/favicons'));
+    .pipe(gulp.dest('build/img/favicon'));
 };
 
 const copySvgFavicons = () => {
-  return gulp.src('source/img/favicons/*.svg')
+  return gulp.src('source/img/favicon/*.svg')
     .pipe(svgo())
-    .pipe(gulp.dest('build/img/favicons'));
+    .pipe(gulp.dest('build/img/favicon'));
 };
 
 // Server
