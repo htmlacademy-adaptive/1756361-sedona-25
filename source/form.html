@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="fonts/ptsans.woff2" rel="preload" type="font/woff2" as="font" crossorigin="anonymous">
+    <link href="fonts/ptsansbold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
   </head>
-<body>
+<body class="page__body">
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__burger">
@@ -45,8 +50,8 @@
       <img class="page__main-background-image page__main-background-image--catalogform" src="img/SEDONA.svg" width="229" height="50" alt="Welcome to the gorgeous Sedona, because the Grand Canyon is sucks">
     </div>
     <section class="intro">
-      <h2 class="intro__head">Оставьте свой отзыв</h2>
-      <p class="intro__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="intro__head intro__head--form">Оставьте свой отзыв</h2>
+      <p class="intro__info intro__info--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <form class="form" action="#" method="post">
       <div class="form__flex">
@@ -204,7 +209,7 @@
       </div>
       <div class="page-footer__item">
         <div class="page-footer__item-academy-wrapper">
-          <p class="page-footer__item-academy-intro">разработано</p>
+          <span class="page-footer__item-academy-intro">разработано</span>
           <div class="page-footer__item-academy">
             <a href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="page-footer__item-academy-icon" width="27" height="34">

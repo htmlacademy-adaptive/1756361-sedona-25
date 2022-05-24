@@ -3,8 +3,7 @@
   border-bottom: 1px solid @grey-disable;
   border-right: none;
   border-left: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 
   &:nth-child(1) {
     border-top: 1px solid @grey-disable;
@@ -31,14 +30,14 @@
   width: 280px;
   height: 60px;
   font-size: 18px;
-  padding-top: 10px;
-
-  @media (min-width: @desktop-width) {
-    width: 324px;
-  }
+  padding: 16px 0;
 
   @media (min-width: @tablet-width) {
-    width: 384px;
+    width: 326px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 385px;
   }
 }
 
@@ -46,6 +45,11 @@
   font-weight: 400;
   font-size: 12px;
   color: fade(@black, 30%);
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .form__button-wrapper {
@@ -53,7 +57,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 56px;
+  padding: 45px 0 24px 0;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -61,8 +65,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 46px;
-    padding-bottom: 26px;
+    padding: 30px 0 66px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -78,13 +81,14 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    padding-bottom: 10px;
   }
 
   &::before {
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      top: 600px;
+      top: 606px;
       bottom: 0;
       left: 50%;
       width: 1px;
@@ -92,9 +96,13 @@
       background-color: @grey-before;
       transform: translateX(-50%);
     }
+
+    @media (min-width: @desktop-width) {
+      top: 643px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    width: 1100px;
   }
 }
