@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="fonts/ptsans.woff2" rel="preload" type="font/woff2" as="font" crossorigin="anonymous">
+    <link href="fonts/ptsansbold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
   </head>
-<body>
+<body class="page__body">
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__burger">
@@ -52,10 +57,10 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x" type="image/webp">
           <source media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x" type="image/webp">
-          <source srcset="img/photo-1-mobile.webp 1x, img/photo-1@2x.webp 2x" type="image/webp">
+          <source srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet@2x.png 2x">
-          <img class="card__image" src="../img/photo-1-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="../img/photo-1-mobile@2x.png 2x">
+          <img class="card__image" src="img/photo-1-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-1-mobile@2x.png 2x">
         </picture>
         </a>
         <div class="card__description card__description--panorama">
@@ -76,7 +81,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x" type="image/webp">
           <source media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x" type="image/webp">
-          <source srcset="img/photo-2-mobile.webp 1x, img/photo-2@2x.webp 2x" type="image/webp">
+          <source srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet@2x.png 2x">
           <img class="card__image" src="img/photo-2-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-2-mobile@2x.png 2x">
@@ -100,7 +105,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x" type="image/webp">
           <source media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x" type="image/webp">
-          <source srcset="img/photo-3-mobile.webp 1x, img/photo-3@2x.webp 2x" type="image/webp">
+          <source srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet@2x.png 2x">
           <img class="card__image" src="img/photo-3-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-3-mobile@2x.png 2x">
@@ -124,7 +129,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x" type="image/webp">
           <source media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x" type="image/webp">
-          <source srcset="img/photo-4-mobile.webp 1x, img/photo-4@2x.webp 2x" type="image/webp">
+          <source srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.png 1x, img/photo-4-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/photo-4-tablet.png 1x, img/photo-4-tablet@2x.png 2x">
           <img class="card__image" src="img/photo-4-mobile.png" width="280" height="280" alt="Панорама неродные просторы" srcset="img/photo-4-mobile@2x.png 2x">
@@ -144,9 +149,9 @@
         </div>
       </div>
     </div>
-    <section class="qestions qestions--video">
-      <h2 class="qestions__intro">Все еще сомневаетесь?</h2>
-      <p class="qestions__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <section class="qestions">
+      <h2 class="qestions__intro qestions__intro--catalog">Все еще сомневаетесь?</h2>
+      <p class="qestions__info qestions__info--catalog">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </section>
     <section class="video">
       <h2 class="visually-hidden">Видео презентация</h2>
@@ -196,11 +201,11 @@
       </div>
       <div class="page-footer__item">
         <div class="page-footer__item-academy-wrapper">
-          <p class="page-footer__item-academy-intro">разработано</p>
+          <span class="page-footer__item-academy-intro">разработано</span>
           <div class="page-footer__item-academy">
             <a href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="page-footer__item-academy-icon" width="27" height="34">
-              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
             </a>
           </div>
