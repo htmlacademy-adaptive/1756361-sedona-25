@@ -1,17 +1,3 @@
-.advantages__item--font-white {
-  color: @white;
-  padding: 0 30px;
-
-  @media (min-width: @tablet-width) {
-    height: 181px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 28%;
-    justify-content: space-between;
-  }
-}
-
 .advantages__item {
   display: flex;
   flex-direction: column;
@@ -52,22 +38,51 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 9px 0 26px 18px;
+  padding: 0 0 23px 15px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     justify-content: space-around;
-    padding: 0;
+    padding: 53px 0 0 0;
+
+    &:nth-child(3) {
+      padding-top: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+
+    &:nth-child(3) {
+      padding-top: 53px;
+    }
   }
 }
 
 .advantages__item-img {
   width: 40px;
+  height: 40px;
   padding-right: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--house {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--burger {
+    background-image: url("../img/icon-burger.svg");
+  }
+
+  &--present {
+    background-image: url("../img/icon-present.svg");
+  }
 
   @media (min-width: @tablet-width) {
-    width: 76px;
-    padding: 65px 0 23px 0;
+    width: 80px;
+    height: 80px;
+    padding: 0;
   }
 }
 
@@ -82,21 +97,83 @@
     text-align: center;
     line-height: 26px;
     font-size: 21px;
+    padding: 22px 0;
   }
 }
 
 .advantages__item-text {
   align-items: start;
-  padding-left: 53px;
+  padding: 10px 0 0 50px;
   text-align: initial;
   line-height: 21px;
   margin: 0;
+
+  &--house {
+    width: 210px;
+  }
+
+  &--burger {
+    width: 240px;
+  }
+
+  &--present {
+    width: 200px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 180px;
     text-align: center;
     align-items: center;
-    padding: 22px 0 60px 0;
+    padding: 0 0 60px 0;
+
+    &--house {
+      width: 170px;
+    }
+
+    &--burger {
+      width: 155px;
+    }
+
+    &--present {
+      width: 195px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--house {
+      width: 255px;
+    }
+
+    &--burger {
+      width: 300px;
+    }
+
+    &--present {
+      width: 290px;
+    }
+  }
+}
+
+.advantages__item-text-br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__item--font-white {
+  color: @white;
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    height: 181px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 28%;
+    justify-content: center;
   }
 }
 
@@ -131,7 +208,7 @@
 
 .advantages__item--second-line {
   width: 320px;
-  padding: 24px 0 30px 0;
+  padding: 23px 0 27px 0;
   margin: 0 auto;
   background-color: @white;
   justify-content: center;
@@ -147,7 +224,7 @@
   @media (min-width: @desktop-width) {
     justify-content: space-around;
     width: 1200px;
-    padding: 0;
+    padding-bottom: 25px;
   }
 }
 
@@ -184,7 +261,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
   }
 }
 
@@ -195,7 +272,7 @@
   padding: 41px 0 11px 0;
 
   &--first {
-    padding-top: 75px;
+    padding-top: 67px;
   }
 
   &--forth {
@@ -221,31 +298,47 @@
 
 .advantages__item-info {
   margin: 0;
-  width: 257px;
+  width: 284px;
   font-weight: 400;
   font-size: 14px;
   padding: 10px 0 40px 0;
-  line-height: 15px;
+  line-height: 21px;
+
+  &--third {
+    padding-bottom: 30px;
+  }
 
   &--forth {
     padding-bottom: 27px;
     line-height: 18px;
+    width: 255px;
   }
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    font-size: 16px;
-    width: 200px;
-    line-height: 23px;
+    font-size: 14px;
+    width: 197px;
+    line-height: 21px;
 
     &--forth {
       padding-bottom: 0;
       line-height: 18px;
+      width: 176px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 328px;
+    width: 290px;
     font-size: 14px;
+
+    &--third {
+      width: 225px;
+    }
+
+    &--forth {
+      padding-bottom: 0;
+      padding-top: 5px;
+      line-height: 21px;
+    }
   }
 }

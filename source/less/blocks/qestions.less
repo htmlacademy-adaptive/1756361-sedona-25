@@ -3,6 +3,11 @@
   width: 280px;
   padding: 39px 20px 0;
 
+  &--catalog {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 458px;
     padding: 51px 0 66px 0;
@@ -24,6 +29,7 @@
 
   &--catalog {
     font-size: 18px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: @tablet-width) {
@@ -35,11 +41,12 @@
 .qestions__info {
   font-size: 14px;
   padding-bottom: 33px;
-  margin: 0;
+  margin: 0 auto;
   line-height: 20px;
 
   &--catalog {
     width: 270px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: @tablet-width) {
@@ -49,6 +56,14 @@
       width: 450px;
       padding-bottom: 12px;
     }
+  }
+}
+
+.qestions__info-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
