@@ -57,7 +57,7 @@
       <div class="form__flex">
         <fieldset class="form__item full-name">
         <div class="full-name__intro">
-          <p class="title">Представтесь:</p>
+          <p class="title">Представьтесь:</p>
         </div>
         <div class="full-name__wrapper">
           <label class="full-name__label" for="name">Имя*:</label>
@@ -95,7 +95,7 @@
         </fieldset>
       </div>
     <fieldset class="form__item effect">
-      <div class="title title--wrapper">
+      <div class="effect__intro title title--wrapper">
         <span class="title title--line"></span>
         <p class="title">Ваше общее впечатление:</p>
         <span class="title title--line"></span>
@@ -116,7 +116,7 @@
           </label>
         </li>
         <li class="effect__checkbox checkbox">
-          <label class="checkbox__label" for="no-answer">
+          <label class="checkbox__label checkbox__label--third" for="no-answer">
           <input class="checkbox__input" type="radio" name="effect" id="no-answer" value="no-answer">
           <span class="checkbox__icon"></span>
           Затрудняюсь ответить
@@ -125,9 +125,9 @@
       </ul>
     </fieldset>
     <fieldset class="form__item visited">
-      <div class="title title--wrapper">
+      <div class="visited__intro title title--wrapper">
         <span class="title title--line"></span>
-        <p class="title">Посещенные<br>достопримечательности:</p>
+        <p class="visited__intro--item title">Посещенные<br>достопримечательности:</p>
         <span class="title title--line"></span>
       </div>
       <ul class="visited__wrapper">
@@ -141,14 +141,14 @@
         <li class="visited__checkbox check-visit">
           <label class="check-visit__label">
           <input class="check-visit__input" type="checkbox" name="mountain" value="Гора-Колокол" checked>
-          <span class="check-visit__icon"></span>
+          <span class="check-visit__icon check-visit__icon--second"></span>
           Гора-Колокол
           </label>
         </li>
         <li class="visited__checkbox check-visit">
           <label class="check-visit__label">
           <input class="check-visit__input" type="checkbox" name="park" value="Слайд-парк" checked>
-          <span class="check-visit__icon"></span>
+          <span class="check-visit__icon check-visit__icon--third"></span>
           Слайд-парк
           </label>
         </li>
@@ -162,7 +162,7 @@
       </ul>
     </fieldset>
     <fieldset class="form__item comment">
-      <div class="title title--wrapper">
+      <div class="comment__intro title title--wrapper">
         <span class="title title--line"></span>
         <p class="title">Опишите свои эмоции:</p>
         <span class="title title--line"></span>
@@ -170,7 +170,7 @@
         <textarea class="comment__placeholder" placeholder="Опишите подробно все свои восторги " id="textarea" name="textarea" rows="10"></textarea>
     </fieldset>
       <div class="form__button-wrapper">
-        <button class="form__button button" type="submit" value="Отправить форму">Отправить отзыв</button>
+        <button class="form__button button button--form" type="submit" value="Отправить форму">Отправить отзыв</button>
         <p class="form__button-footnote">* — Обязательные поля</p>
       </div>
     </form>

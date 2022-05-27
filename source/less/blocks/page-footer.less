@@ -62,29 +62,29 @@
   grid-column-gap: 15px;
   align-items: center;
 
+  &:hover {
+    p {
+      color: @blue-hover;
+    }
+
+    path {
+      fill: @blue-hover;
+    }
+
+    &:active {
+      p {
+        color: rgba(@black, 0.3);
+      }
+
+      svg {
+        fill: rgba(@black, 0.3);
+      }
+    }
+
   @media (min-width: @desktop-width) {
     padding-left: 43px;
   }
 }
-
-.page-footer__item-academy-wrapper:hover {
-  p {
-    color: @blue-hover;
-  }
-
-  path {
-    fill: @blue-hover;
-  }
-}
-
-.page-footer__item-academy-wrapper:active {
-  p {
-    color: rgba(@black, 0.3);
-  }
-
-  svg {
-    fill: rgba(@black, 0.3);
-  }
 }
 
 
