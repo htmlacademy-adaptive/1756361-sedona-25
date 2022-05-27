@@ -1,7 +1,7 @@
 .user-data {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 26px;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -9,22 +9,21 @@
 
   @media (min-width: @desktop-width) {
     width: 420px;
+    padding-left: 24px;
   }
-}
-
-.user-data__intro p {
-  margin: 0;
 }
 
 .user-data__intro {
-  padding: 24px 0 20px 0;
+  padding: 26px 0 21px 0;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 33px;
+    padding-right: 43px;
+    padding-bottom: 28px;
+    padding-top: 27px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 50px;
+    padding-right: 73px;
   }
 }
 
@@ -42,13 +41,13 @@
 }
 
 .user-data__label {
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .user-data__input {
   width: 214px;
-  height: 50px;
-  padding: 0 0 0 8px;
+  height: 53px;
+  padding: 0 0 0 7px;
   font-weight: 700;
   font-size: 18px;
   background-color: @grey-form-catalog;
@@ -57,6 +56,7 @@
   &::placeholder {
     color: rgba(@black, 0.3);
     padding-left: 5px;
+    font-family: @font;
   }
 
   &:hover {
@@ -74,13 +74,11 @@
 }
 
 .user-data__input-icon {
-  content: "";
+  content: " ";
   position: absolute;
-  right: -58px;
-
+  right: -50px;
   width: 58px;
-  height: 58px;
-
+  height: 61px;
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: center;

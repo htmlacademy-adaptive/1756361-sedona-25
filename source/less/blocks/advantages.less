@@ -163,8 +163,10 @@
 }
 
 .advantages__item--font-white {
+
+  margin: 0 auto;
   color: @white;
-  padding: 0 30px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     height: 181px;
@@ -255,8 +257,9 @@
     width: 768px;
     display: flex;
     flex-direction: row;
-    padding: 40px 0 55px 0;
+    padding: 40px 0 47px 0;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   @media (min-width: @desktop-width) {
@@ -292,7 +295,11 @@
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
-    padding: 15px 0 20px 0;
+    padding: 15px 0 25px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 20px;
   }
 }
 
@@ -322,8 +329,12 @@
 
     &--forth {
       padding-bottom: 0;
-      line-height: 18px;
+      line-height: 20px;
       width: 176px;
+
+      &:nth-child(2) {
+        width: 142px;
+      }
     }
   }
 

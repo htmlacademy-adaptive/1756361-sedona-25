@@ -1,9 +1,10 @@
 .check-visit {
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 31px;
+    padding-bottom: 27px;
   }
 }
 
@@ -14,12 +15,22 @@
 
 .check-visit__icon {
   position: absolute;
-  top: -13px;
+  top: 3px;
   left: 0;
   width: 46px;
   height: 46px;
   background-color: @grey-form-catalog;
   border-radius: 4px;
+
+  @media (min-width: @desktop-width) {
+    &--second {
+      left: 9px;
+    }
+
+    &--third {
+      left: 12px;
+    }
+  }
 }
 
 .check-visit__label {
@@ -38,6 +49,11 @@
 .check-visit__input:hover + .check-visit__icon,
 .check-visit__input:checked:hover + .check-visit__icon {
   background-color: @grey-disable;
+}
+
+.check-visit__input:focus + .check-visit__icon,
+.check-visit__input:checked:focus + .check-visit__icon {
+  background-color: @grey-active;
 }
 
 .check-visit__input:active + .check-visit__icon,

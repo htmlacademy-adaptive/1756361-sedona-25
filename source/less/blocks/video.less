@@ -21,30 +21,23 @@
 }
 
 .video-item__button {
-  fill: rgba(@white, 0.7);
+  border: none;
   position: absolute;
-  margin: auto;
-  top: 0;
-  left: 11px;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
+  background-image: url("/img/video-play.svg");
+  background-color: transparent;
+  width: 48px;
+  height: 54px;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0;
 
   &:hover {
-    fill: rgba(@white, 0.3);
+    background-image: url("/img/video-play.svg");
   }
 
   &:active {
-    fill: rgba(@white, 0.1);
+    background-image: url("/img/video-play.svg");
   }
 
-  @media (min-width: @tablet-width) {
-    top: -35px;
-    left: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: -1px;
-    top: -89px;
-  }
 }

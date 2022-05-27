@@ -13,12 +13,27 @@
   }
 }
 
+.comment__intro {
+  padding-top: 26px;
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+  }
+}
+
 .comment textarea {
   width: calc(100% - 71px);
   height: 115px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 18px;
+  line-height: 26px;
   font-family: @font;
   background: @grey-form-catalog;
   padding: 18px 16px;
@@ -32,7 +47,7 @@
 
   @media (min-width: @tablet-width) {
     width: 617px;
-    height: 135px;
+    height: 127px;
   }
 
   @media (min-width: @desktop-width) {
